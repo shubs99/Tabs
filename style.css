@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: #ddd;
+    font-family: ;
+}
+.tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+  
+
+}
+
+.design{
+   padding: 20px;
+  
+}
+
+.design:hover{
+    color: rgb(141, 28, 141);
+    background-color: rgb(180, 175, 175);
+    
+}
+
+.implementation{
+    padding: 20px;
+
+}
+
+
+/* .design:hover{
+    color: rgb(141, 28, 141);
+    background-color: rgb(180, 175, 175);
+}
+
+.implementation:after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: purple;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.implementation:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+} */
+
+.implementation {
+    display: inline-block;
+    position: relative;
+    color: #000;
+}
+
+.implementation:hover{
+    background-color: rgb(180, 175, 175);
+    color: rgb(141, 28, 141);
+}
+
+.implementation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(141, 28, 141);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.implementation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+  .design {
+    display: inline-block;
+    position: relative;
+    color: #000;
+}
+
+.design:hover{
+    background-color: rgb(180, 175, 175);
+    color: rgb(141, 28, 141);
+}
+
+.design:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(141, 28, 141);
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.design:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+.tab-indicator{
+    position: relative;
+    width: 30%;
+    left: 0px;
+    border-radius: 5px;
+    background-color: #00acee;
+}
